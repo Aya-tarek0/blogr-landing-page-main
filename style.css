@@ -124,9 +124,13 @@ padding: 10px 20px;
 
 
 }
- li:hover{
+ nav li:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+li{
+    font-family: 'overpass', sans-serif;
+    font-weight: bold;
 }
 
 .menu {
@@ -269,7 +273,7 @@ overflow: clip;
     display: none;
     background-color: var(--White);
     color: var(--Verydarkgrayblue1);
-    font-family: 'overpass', sans-serif;
+    
     width: 90%;
     margin: 1em;
     text-align: center;   
