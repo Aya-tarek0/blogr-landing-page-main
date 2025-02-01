@@ -204,12 +204,11 @@ h2{
     color: var(--Verydarkgrayishblue);
 }
 .container3{
-    margin-top: 30px;
+    margin-top:2em;
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(to right, var(--Verydarkgrayblue1), var(--Verydarkdesaturatedblue1) 70%);
     overflow: hidden;
-    max-height: 400px;
     border-radius: 0px 130px 0px 130px;
 
 }
