@@ -58,6 +58,7 @@ body{
 .col1{
     display: flex;
     margin-inline-start: 70px;
+   
 
     
     }
@@ -73,7 +74,7 @@ list-style-type: none;
     gap: 20px;
 }
 .col2{
-    margin: 40px;
+    margin: 40px 220px;
     display: flex;
     gap: 40px;
 }
