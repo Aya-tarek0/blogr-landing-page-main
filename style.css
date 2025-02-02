@@ -418,6 +418,7 @@ width: 50%;
        
     }
   .page1{
+    background-position: 36% 40%;
     background-image: url('images/bg-pattern-intro-mobile.svg'), linear-gradient(to top, var(--Lightred1), var(--Verylightred1));
   }
 
