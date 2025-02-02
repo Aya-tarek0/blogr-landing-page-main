@@ -37,7 +37,7 @@ body{
  
 }
 .page1{
-    background-position:center;
+    background-position:27% 52%;
     background-repeat: no-repeat;
     background-image: url('images/bg-pattern-intro-desktop.svg'), linear-gradient(to left, var(--Lightred1), var(--Verylightred1));
     border-radius: 0px 0px 0px 70px;
@@ -50,16 +50,14 @@ body{
 }
 .logo{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 10px;
+    margin: 2em;
 }
 .col1{
     display: flex;
-    margin-inline-start: 70px;
-   
-
+    margin-inline-start: 2em;
+ 
     
     }
 
@@ -68,15 +66,17 @@ list-style-type: none;
 
 }
 .list{
-    margin: 60px;
+    margin: 4em 0em;
     margin-bottom:0px;
     display: flex;
-    gap: 20px;
+    gap: 1em;
 }
 .col2{
-    margin: 40px 220px;
+   margin-inline-start: 17em;
+   margin-block-start: 3em;
     display: flex;
     gap: 40px;
+  
 }
 .container1{
     display: flex;
@@ -125,6 +125,10 @@ padding: 10px 20px;
 
 
 }
+.a{
+  transform: rotate(180deg);
+}
+
  nav li:hover{
     cursor: pointer;
     text-decoration: underline;
@@ -134,7 +138,8 @@ li{
     font-weight: bold;
 }
 
-.menu {
+.menu ,.menu1 ,.menu2{
+  font-family: 'overpass', sans-serif;
     display: none; 
     background-color: var(--White);
     max-width: 200px;
@@ -145,16 +150,47 @@ li{
     font-size: 14px;
 }
 
-.menu.show {
+.menu.show{
+    top: 9em;
     display: flex; 
     flex-direction: column;
-    gap: 20px;
+    gap: 1em;
     text-align: center;
     border-radius: 10px;
-    margin-inline-start: 510px;
+    margin-inline-start: 49em;
     position: absolute;
     padding: 14px 50px 14px 10px;
     font-size: 10px;
+}
+.menu1.show{
+  font-family: 'overpass', sans-serif;
+
+  text-align: center;
+  display: flex; 
+  top: 9em;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+    margin-inline-start: 23em;
+    position: absolute;
+    padding: 14px 50px 14px 10px;
+    font-size: 10px;
+ 
+}
+.menu2.show{
+  font-family: 'overpass', sans-serif;
+
+  text-align: center;
+  display: flex; 
+  top: 9em;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+    margin-inline-start: 36em;
+    position: absolute;
+    padding: 14px 50px 14px 10px;
+    font-size: 10px;
+ 
 }
 .menu-item:hover{
     font-weight: bolder;
@@ -162,6 +198,14 @@ li{
 }
 .men{
     display: none;
+    
+}
+#menu-icon{
+  margin-inline-start: 2 rem;
+  font-size: 40px;
+
+
+  
 }
 .row2{
     display: flex;
@@ -169,8 +213,10 @@ li{
    
 }
 .img2{
-    max-width: 700px;
-    margin-right:400px;
+    width: 100%;   
+    position: relative;
+   
+    right:-12em;
     
 }
 
@@ -192,10 +238,10 @@ h2{
 }
 
 .col4{
-    margin-right: 230px;
-    margin-top: 160px;
-    margin-left: 110px;
-    max-width:550px;
+    margin-right: 3em;
+    margin-top: 1em;
+    margin-left: 4em;
+    width: 60%;
 }
 .sec1 ,.sec2{
     line-height: 1.8;
@@ -205,32 +251,37 @@ h2{
     color: var(--Verydarkgrayishblue);
 }
 .container3{
-    margin-top:2em;
+    margin-top:5em;
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(to right, var(--Verydarkgrayblue1), var(--Verydarkdesaturatedblue1) 70%);
     overflow: hidden;
     border-radius: 0px 130px 0px 130px;
+    height: 44vh;
+  
 
 }
 .img4{
-right: 700px;
-max-width: 700px;
+max-width: 100%;
+position: relative;
+bottom: 15em;
+
 
 }
 .img3{
     
     position:absolute ;
     max-width: 500px;
-    top: 1255px;
-    margin-inline-start: 100px;
+    top:75em;
+    margin-inline-start: 2em;
+    z-index: 1;
 }
 .col5{
     color: var(--White);
     font-family: 'Open Sans', sans-serif;
-    margin-top: 100px;
+    margin-top: 2em;
     line-height: 2.1;
-    max-width: 500px;
+    width: 40%;
 }
 
 
@@ -239,7 +290,7 @@ max-width: 700px;
     display: flex;
     align-items: center;
     max-width: 100%;
-    margin: 40px auto;
+    margin: 7em auto;
     gap: 10px;
     color: var(--Verydarkblue);
   }
@@ -343,7 +394,8 @@ width: 50%;
     background-color: #fff;
     z-index: 1000;         
     padding: 2rem;   
-      line-height: 1.9;
+    line-height: 1.9;
+    margin: 2.4rem;
   }
  
   .togMen{
@@ -356,15 +408,26 @@ width: 50%;
     line-height: 1.9;
     display: block;
  }
+ .mobImage{
+  display: none;
+ }
  
 @media screen and (max-width: 900px) {
     .row{
         flex-direction: column;
        
     }
+  .page1{
+    background-image: url('images/bg-pattern-intro-mobile.svg'), linear-gradient(to top, var(--Lightred1), var(--Verylightred1));
+  }
+
     .col1{
-        margin-inline-start: 0px;
+     width: 100%; 
+     margin-inline-start: 0px; 
         
+    }
+    h1{
+      margin-block-start: 0;
     }
     .list{
         display: none;
@@ -373,9 +436,15 @@ width: 50%;
         display: none;
     }
     .img2{
-        margin-right: 0px;
+        display: none;
     }
-  
+    .mobImage{
+      display: flex;
+      align-items: center;
+    }
+  .mobImage img{
+    width: 90%;
+  }
     .column2{
         line-height: 1.5;
     } 
@@ -390,13 +459,19 @@ width: 50%;
  
 
  .row2{
-    text-align: center;
     flex-direction: column;
-    margin-inline-start: 0px;
     width: 100%;
     flex-wrap: wrap;
+    align-items: center;
 
  }
+
+.img4{
+  width: 100%;
+  bottom: 5em;
+ 
+
+}
 
  .col4{
     max-width: 90%;
@@ -412,24 +487,24 @@ width: 50%;
     width: 70%;
 }
  .img3{
-    width: 70%;
+    width: 90%;
     margin-inline-start: 0px;
-    top: 210%;
+    top: 230%;
  }
 
   .col5{
+    line-height:normal;
     display: block;
-    margin-top: 20rem;
-    margin-inline-start: 0px;
-      width: 100%;
+    margin-inline-start: 1em;
+    margin-block-start: 12em;
+      width: 90%;
     text-align: center;
     position: absolute;
 
   }
   .container3{
     width: 100%;
-    max-height: 100%;
-  }
+height: 60vh;  }
   .headd{
     z-index: 0;
   }
