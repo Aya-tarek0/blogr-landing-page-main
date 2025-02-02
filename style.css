@@ -491,6 +491,7 @@ width: 50%;
     width: 90%;
     margin-inline-start: 0px;
     top: 230%;
+    top: 231%;
  }
 
   .col5{
@@ -498,6 +499,7 @@ width: 50%;
     display: block;
     margin-inline-start: 1em;
     margin-block-start: 12em;
+    margin-block-start: 13em;
       width: 90%;
     text-align: center;
     position: absolute;
